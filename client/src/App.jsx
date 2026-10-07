@@ -62,7 +62,7 @@ function App() {
 
  const handleDelete = async (id) => {
    try {
-     await axios.delete(`http://localhost:5000/students/${id}`);
+     await axios.delete(`/students/${id}`);
      reloadStudents();
    } catch (error) {
      console.error("Error deleting student:", error);
